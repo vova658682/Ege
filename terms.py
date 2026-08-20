@@ -1,0 +1,4 @@
+result
+user_num
+random.randint
+last_digit
