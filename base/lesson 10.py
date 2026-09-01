@@ -73,8 +73,8 @@
 #Пример: если ввели «Привет» и 3, вывод будет:
 from random import *
 n = (randint(1,10))
-world = input("Введите слово")
-print(f'Выводим столько  {world} {n} раз:')
+i = input("Введите слово")
+print(f'Выводим столько  {i} {n} раз:')
 for _ in range(n):
-    print(world)
+    print(i)
 
