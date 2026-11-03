@@ -1,3 +1,4 @@
+
 from string import printable as alph
 def convert(num,sys):
     res = ''
@@ -16,10 +17,6 @@ for N in range(1,10000):
     if R < 199:
         ans.append(N)
 print(max(ans))
-
-
-
-
 
 
 
