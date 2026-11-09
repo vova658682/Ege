@@ -1,38 +1,27 @@
-#ans = []
-#for N in range(1,10000):
-#    R = f'{N:b}'
-#    if N % 3 == 0:
-#        R =  R + R[-3:]
-#    else:
-#        R = R + f'{N % 3 * 3:b}'
-#    R = int(R,2)
-#    if R > 76:
-#        ans.append(N)
-#print(min(ans))
-#ans = []
-#for N in range(1, 10000):
-#    R = f'{N:b}'
-#    if N % 2 == 0:
-#        R = R +'10'
-#    else:
-#        R = '1' + R + '01'
-#    R = int(R,2)
-#    if R > 516:
-#        ans.append(N)
-#print(min(ans))
-ans = []
-for N in range(1,10000):
-    R = f'{N:b}'
-    if sum(map(int,R)) % 2 == 0:
-        R = R + '0'
-        R = '10' + R[2:]
-    else:
-        R = '1'+ R
-        R = '11' + R[2:]
-    R = int(R,2)
-    if R >= 16:
-        ans.append(N)
-print(min(ans))
-
-
-
+from turtle import *
+screensize(10000,10000)
+tracer(0)
+m=10
+for i in range(2):
+    fd(28*m)
+    rt(90)
+    fd(18*m)
+    rt(90)
+up()
+fd(14*m)
+rt(90)
+fd(10*m)
+lt(90)
+down()
+for i in range(2):
+    fd(30*m)
+    rt(90)
+    fd(7*m)
+    rt(90)
+for x in range(14,29):
+    for y in range(-17,-9):
+        teleport(x*m,y*m)
+        dot(3,'red')
+print(29*19+31*8-)
+update()
+done()
