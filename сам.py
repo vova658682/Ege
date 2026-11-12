@@ -9,24 +9,52 @@
 #    if R >= 3000:
 #        ans.append(N)
 #print(min(ans))
-from string import printable as alph
-def convert2(num, sys):
+#from string import printable as alph
+#def convert2(num, sys):
+#    res = ''
+#    while num:
+#        res += alph[num % sys]
+#        num //= sys
+#    return res[::-1] if res else '0'
+#ans = []
+#for N in range(1,10000):
+#    R = convert2(N,3)
+#    if N % 2 == 0:
+#        R = R + R[-2:]
+#    else:
+#        R = R + convert2(sum(map(int,R)), 3)
+#    R = int(R,3)
+#    if N > 9:
+#        ans.append([R,N])
+#print(min(ans))
+def convert(num,sys):
     res = ''
     while num:
-        res += alph[num % sys]
+        res += str(num % sys)
         num //= sys
-    return res[::-1] if res else '0'
-ans = []
-for N in range(1,10000):
-    R = convert2(N,3)
-    if N % 2 == 0:
-        R = R + R[-2:]
-    else:
-        R = R + convert2(sum(map(int,R)), 3)
-    R = int(R,3)
-    if N > 9:
-        ans.append([R,N])
-print(min(ans))
+    return res [::-1] if res else '0'
+num = 4**36 + 3 * 4**20 + 4**15 + 2 * 4**7 + 49
+R = convert(num,16)
+print(R)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
