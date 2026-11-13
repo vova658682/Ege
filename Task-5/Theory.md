@@ -74,3 +74,8 @@ sum_2 = sum(map(int, num_2))
 # любая сс до 36 включительно
 num_3 = 'AF5'
 sum_3 = sum(map(lambda x: int(x, 36), num_3))
+
+
+
+
+index 'k' находит номер этой буквы 
